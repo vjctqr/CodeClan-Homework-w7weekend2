@@ -1,6 +1,8 @@
-<template>
+<template lang="html">
   <div>
-      <the-list-component v-for="(meal, index) in meals" :meals="meal" :key="index"></the-list-component>
+      <ul>
+        <the-list-component v-for="(meal, index) in meals" :meals="meal" :key="index"></the-list-component>
+      </ul>
   </div>
 </template>
 
@@ -17,6 +19,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="css" scoped>
 
 </style>

@@ -1,4 +1,5 @@
-<template>
+<template lang="html">
+
   
 </template>
 
@@ -7,7 +8,12 @@ import {eventBus} from '../main.js'
 
 export default {
     name: 'the-list-component',
-    props: ['meals'],
+    props: ['meal'],
+    methods: {
+        handleClick(){
+            eventBus.$emit('meal-selected', this.meal)
+        }
+    }
 
 }
 </script>
