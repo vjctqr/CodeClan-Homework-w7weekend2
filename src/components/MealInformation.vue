@@ -1,6 +1,6 @@
 <template lang="html">
   <div v-if='meal'>
-      <h3>{{meal.manufacturer}}</h3>
+      <p>{{meal.manufacturer}}</p>
 
   </div>
   

@@ -1,6 +1,8 @@
 <template lang="html">
-
-  
+  <div>
+    <p>{{meal.name}}</p>
+    <button v-on:click="displayInfo"></button>
+  </div>  
 </template>
 
 <script>
@@ -10,10 +12,11 @@ export default {
     name: 'the-list-component',
     props: ['meal'],
     methods: {
-        handleClick(){
+        displayInfo: function(){
             eventBus.$emit('meal-selected', this.meal)
-        }
-    }
+        },
+    },
+ 
 
 }
 </script>
